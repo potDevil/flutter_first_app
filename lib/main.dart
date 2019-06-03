@@ -4,6 +4,7 @@ import 'demo/SliverDemo.dart';
 import 'demo/basic_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
 import 'demo/drawer_demo.dart';
+import 'demo/form_demo.dart';
 import 'demo/layout_demo.dart';
 import 'demo/listview_demo.dart';
 import 'demo/nihao_demo.dart';
@@ -18,15 +19,18 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 //      home: Home(), // Scaffold
       // 设置初始路由
-      initialRoute: '/',
+      initialRoute: '/form',
       routes: {
         '/': (context) => Home(),
         '/favorite': (context) => FavoriteDemo(title: 'favorite'),
+        '/form': (context) => FormDemo(),
       },
       theme: ThemeData(
-          primarySwatch: Colors.yellow, // 主题颜色
-          highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
-          splashColor: Colors.white70),
+        primarySwatch: Colors.yellow, // 主题颜色
+        highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
+        splashColor: Colors.white70,
+        accentColor: Colors.white,
+      ),
     ); // MaterialApp
   }
 }
