@@ -1,6 +1,7 @@
 ///Created by fuzhi on 2019-05-29
 
 import 'package:flutter/material.dart';
+import 'Favorite_demo.dart';
 
 class DrawerDemo extends StatelessWidget {
   @override
@@ -36,6 +37,7 @@ class DrawerDemo extends StatelessWidget {
           ListTile(
             title: Text('Favorite', textAlign: TextAlign.right,),
             trailing: Icon(Icons.favorite, color:Colors.black12, size:22.0),// 标题后面添加图标
+            onTap: () => Navigator.pushNamed(context, '/favorite'),
           ),
           ListTile(
             title: Text('Settings', textAlign: TextAlign.right,),

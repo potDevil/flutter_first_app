@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'demo/Favorite_demo.dart';
 import 'demo/SliverDemo.dart';
 import 'demo/basic_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
@@ -15,7 +16,13 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Home(), // Scaffold
+//      home: Home(), // Scaffold
+      // 设置初始路由
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Home(),
+        '/favorite': (context) => FavoriteDemo(title: 'favorite'),
+      },
       theme: ThemeData(
           primarySwatch: Colors.yellow, // 主题颜色
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
