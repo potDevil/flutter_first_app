@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'demo/SliverDemo.dart';
 import 'demo/basic_demo.dart';
 import 'demo/bottom_navigation_bar_demo.dart';
 import 'demo/drawer_demo.dart';
@@ -16,7 +17,7 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Home(), // Scaffold
       theme: ThemeData(
-          primarySwatch: Colors.yellow,// 主题颜色
+          primarySwatch: Colors.yellow, // 主题颜色
           highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
           splashColor: Colors.white70),
     ); // MaterialApp
@@ -24,7 +25,6 @@ class App extends StatelessWidget {
 }
 
 class Home extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -42,7 +42,14 @@ class Home extends StatelessWidget {
             IconButton(
               icon: Icon(Icons.search),
               tooltip: 'search',
-              onPressed: () => debugPrint('Search button is Pressed'),
+              onPressed: () {
+                // 跳转到sliver页面
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => SliverDemo()),
+                );
+                debugPrint('Search button is Pressed');
+              },
             ),
           ],
           elevation: 0,
@@ -59,7 +66,8 @@ class Home extends StatelessWidget {
               Tab(icon: Icon(Icons.face)),
             ],
           ),
-        ), // AppBar
+        ),
+        // AppBar
         body: TabBarView(
           children: <Widget>[
             ListViewDemo(),
