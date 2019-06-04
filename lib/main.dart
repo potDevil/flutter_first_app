@@ -7,6 +7,7 @@ import 'demo/drawer_demo.dart';
 import 'demo/form_demo.dart';
 import 'demo/layout_demo.dart';
 import 'demo/listview_demo.dart';
+import 'demo/material_components.dart';
 import 'demo/nihao_demo.dart';
 import 'demo/view_demo.dart';
 
@@ -19,11 +20,12 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 //      home: Home(), // Scaffold
       // 设置初始路由
-      initialRoute: '/form',
+      initialRoute: '/mdc',
       routes: {
         '/': (context) => Home(),
         '/favorite': (context) => FavoriteDemo(title: 'favorite'),
         '/form': (context) => FormDemo(),
+        '/mdc': (context) => MaterialComponents(),
       },
       theme: ThemeData(
         primarySwatch: Colors.yellow, // 主题颜色
@@ -93,3 +95,4 @@ class Home extends StatelessWidget {
     );
   }
 }
+
