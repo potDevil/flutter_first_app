@@ -1,10 +1,15 @@
 ///Created by fuzhi on 2019-06-04
 
 import 'package:flutter/material.dart';
-import 'package:flutter_app/demo/popup_menu_button_demo.dart';
-
+import 'popup_menu_button_demo.dart';
+import 'radio_demo.dart';
+import 'slider_demo.dart';
+import 'switch_demo.dart';
 import 'button_demo.dart';
+import 'checkbox_demo.dart';
+import 'datetime_demo.dart';
 import 'floating_action_button_demo.dart';
+import 'form_demo.dart';
 
 class MaterialComponents extends StatelessWidget {
   @override
@@ -18,6 +23,30 @@ class MaterialComponents extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(
+            title: 'DateTime',
+            page: DateTimeDemo(),
+          ),
+          ListItem(
+            title: 'Slider',
+            page: SliderDemo(),
+          ),
+          ListItem(
+            title: 'Switch',
+            page: SwitchDemo(),
+          ),
+          ListItem(
+            title: 'Radio',
+            page: RadioDemo(),
+          ),
+          ListItem(
+            title: 'Checkbox',
+            page: CheckboxDemo(),
+          ),
+          ListItem(
+            title: 'Form',
+            page: FormDemo(),
+          ),
           ListItem(
             title: 'PopupMenuButton',
             page: PopupMenuButtonDemo(),

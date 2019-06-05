@@ -31,7 +31,7 @@ class App extends StatelessWidget {
         primarySwatch: Colors.yellow, // 主题颜色
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white70,
-        accentColor: Colors.white,
+        accentColor: Colors.blue,
       ),
     ); // MaterialApp
   }
