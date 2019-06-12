@@ -1,9 +1,14 @@
 ///Created by fuzhi on 2019-06-04
 
 import 'package:flutter/material.dart';
+import 'alert_dialog_demo.dart';
+import 'bottom_sheet_demo.dart';
+import 'expansion_panel_demo.dart';
+import 'simple_dialog_demo.dart';
 import 'popup_menu_button_demo.dart';
 import 'radio_demo.dart';
 import 'slider_demo.dart';
+import 'snack_bar_demo.dart';
 import 'switch_demo.dart';
 import 'button_demo.dart';
 import 'checkbox_demo.dart';
@@ -23,6 +28,28 @@ class MaterialComponents extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(
+            // 展开或者收缩面板
+            title: 'ExpansionPanel',
+            page: ExpansionPanelDemo(),
+          ),
+          ListItem(
+            // 提示bar
+            title: 'SnackBar',
+            page: SnackBarDemo(),
+          ),
+          ListItem(
+            title: 'BottomSheet',
+            page: BottomSheetDemo(),
+          ),
+          ListItem(
+            title: 'AlertDialog',
+            page: AlertDialogDemo(),
+          ),
+          ListItem(
+            title: 'SimpleDialog',
+            page: SimpleDialogDemo(),
+          ),
           ListItem(
             title: 'DateTime',
             page: DateTimeDemo(),

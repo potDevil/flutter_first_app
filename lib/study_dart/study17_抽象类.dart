@@ -12,7 +12,6 @@ abstract class Person {
 class Student extends Person {
   @override
   void run() {
-    // TODO: implement run
     print("runing...");
   }
 }

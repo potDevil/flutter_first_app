@@ -10,7 +10,7 @@ class ButtonDemo extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         FlatButton(
-          child: Text('Button'),
+          child: Text('flatButton'),
           onPressed: () {},
           // 溅墨效果
           splashColor: Colors.grey,
@@ -19,7 +19,7 @@ class ButtonDemo extends StatelessWidget {
         FlatButton.icon(
           onPressed: () {},
           icon: Icon(Icons.add),
-          label: Text('Button'),
+          label: Text('flatButton'),
           // 溅墨效果
           splashColor: Colors.grey,
           textColor: Colors.blue,
@@ -41,7 +41,7 @@ class ButtonDemo extends StatelessWidget {
             ),
           ),
           child: RaisedButton(
-            child: Text('Button'),
+            child: Text('raisedButton'),
             onPressed: () {},
             // 溅墨效果
             splashColor: Colors.grey,
@@ -54,7 +54,7 @@ class ButtonDemo extends StatelessWidget {
         RaisedButton.icon(
           onPressed: () {},
           icon: Icon(Icons.add),
-          label: Text('Button'),
+          label: Text('raisedButton'),
           // 溅墨效果
           splashColor: Colors.grey,
           textColor: Colors.blue,
@@ -82,7 +82,7 @@ class ButtonDemo extends StatelessWidget {
           child: OutlineButton(
             // 设置描边
             borderSide: BorderSide(color: Colors.black),
-            child: Text('Button'),
+            child: Text('outlineButton'),
             onPressed: () {},
             // 溅墨效果
             splashColor: Colors.grey[200],
@@ -95,7 +95,7 @@ class ButtonDemo extends StatelessWidget {
         OutlineButton.icon(
           onPressed: () {},
           icon: Icon(Icons.add),
-          label: Text('Button'),
+          label: Text('outlineButton'),
           // 溅墨效果
           splashColor: Colors.grey,
           textColor: Colors.blue,
@@ -114,7 +114,7 @@ class ButtonDemo extends StatelessWidget {
           child: OutlineButton(
             // 设置描边
             borderSide: BorderSide(color: Colors.black),
-            child: Text('Button'),
+            child: Text('fixedWidthButton'),
             onPressed: () {},
             // 溅墨效果
             splashColor: Colors.grey[200],
@@ -133,7 +133,7 @@ class ButtonDemo extends StatelessWidget {
           child: OutlineButton(
             // 设置描边
             borderSide: BorderSide(color: Colors.black),
-            child: Text('Button'),
+            child: Text('expandedButton'),
             onPressed: () {},
             // 溅墨效果
             splashColor: Colors.grey[200],
@@ -148,7 +148,7 @@ class ButtonDemo extends StatelessWidget {
           child: OutlineButton(
             // 设置描边
             borderSide: BorderSide(color: Colors.black),
-            child: Text('Button'),
+            child: Text('expandedButton'),
             onPressed: () {},
             // 溅墨效果
             splashColor: Colors.grey[200],

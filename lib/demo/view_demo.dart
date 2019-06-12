@@ -22,7 +22,6 @@ class GridViewBuilderDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return GridView.builder(
       itemBuilder: _gridItemBuilder,
       itemCount: posts.length,

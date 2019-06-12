@@ -30,6 +30,7 @@ void main() {
   map.forEach(f);
 
   var list = ["1", "2", "3"];
+  print('devil');
   print(list.asMap());
 }
 
