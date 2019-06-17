@@ -1,6 +1,11 @@
 ///Created by fuzhi on 2019-06-04
 
 import 'package:flutter/material.dart';
+import 'MDC/card_demo.dart';
+import 'MDC/chip_demo.dart';
+import 'MDC/data_table_demo.dart';
+import 'MDC/paginated_data_table_demo.dart';
+import 'MDC/stepper_demo.dart';
 import 'alert_dialog_demo.dart';
 import 'bottom_sheet_demo.dart';
 import 'expansion_panel_demo.dart';
@@ -28,6 +33,26 @@ class MaterialComponents extends StatelessWidget {
       ),
       body: ListView(
         children: <Widget>[
+          ListItem(
+            title: 'Stepper',
+            page: StepperDemo(),
+          ),
+          ListItem(
+            title: 'Card',
+            page: CardDemo(),
+          ),
+          ListItem(
+            title: 'PaginatedDataTable',
+            page: PaginatedDataTableDemo(),
+          ),
+          ListItem(
+            title: 'DataTable',
+            page: DataTableDemo(),
+          ),
+          ListItem(
+            title: 'Chip',
+            page: ChipDemo(),
+          ),
           ListItem(
             // 展开或者收缩面板
             title: 'ExpansionPanel',

@@ -71,6 +71,7 @@ class _ExpansionPanelDemoState extends State<ExpansionPanelDemo> {
                 });
               },
               // TODO List.map().toList() 不懂什么意思 flutter从入门到精通-12章对话框-12小节ExpansionPanel:面板列表项目
+              // 通过查资料解答: List.map().toList() 是iterable提供了map方法，来处理每一个集合中的对象，并返回一个结果,最后再把结果转换为一个List集合
               children: _expansionPanelItem.map(
                 (ExpansionPanelItem item) {
                   return ExpansionPanel(
