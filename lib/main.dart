@@ -9,6 +9,8 @@ import 'demo/layout_demo.dart';
 import 'demo/listview_demo.dart';
 import 'demo/material_components.dart';
 import 'demo/nihao_demo.dart';
+import 'demo/state/state_management_demo.dart';
+import 'demo/state/state_management_demo2.dart';
 import 'demo/view_demo.dart';
 
 void main() => runApp(App());
@@ -20,12 +22,14 @@ class App extends StatelessWidget {
       debugShowCheckedModeBanner: false,
 //      home: Home(), // Scaffold
       // 设置初始路由
-      initialRoute: '/mdc',
+      initialRoute: '/state2',
       routes: {
         '/': (context) => Home(),
         '/favorite': (context) => FavoriteDemo(title: 'favorite'),
         '/form': (context) => FormDemo(),
         '/mdc': (context) => MaterialComponents(),
+        '/state': (context) => StateManagementDemo(),
+        '/state2': (context) => StateManagementDemo2(),
       },
       theme: ThemeData(
         primarySwatch: Colors.yellow, // 主题颜色
